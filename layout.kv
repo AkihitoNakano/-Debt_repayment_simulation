@@ -1,0 +1,35 @@
+<Label>
+    font_size:20
+    size_hint: 0.2, 0.2
+<TextInput>
+    font_size:20
+    size_hint:0.4, 0.06
+
+<MyLayout>
+    BoxLayout:
+        orientation:'vertical'
+        size: root.width, root.height
+        padding: 50
+        spacing: 30
+
+        GridLayout:
+            cols:2
+
+            Label:
+                text:'借金額（円）'
+            TextInput:
+                multiline: False
+                valign:'center'
+
+
+            Label:
+                text:'金利（年利率）％'
+            TextInput:
+                multiline: False
+
+
+            Label:
+                text:'月々の返済額（円）'
+            TextInput:
+                multiline: False
+                size_hint_y:0.3
